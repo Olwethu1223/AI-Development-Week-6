@@ -1,0 +1,42 @@
+# Ethical risks of AI use in healthcare
+Bias and discrimination
+AI in healthcare can unintentionally worsen disparities if trained on biased or incomplete data. For instance, an algorithm once suggested less care for Black patients—not based on medical need, but because of historically lower healthcare spending. This mistake reinforced systemic inequities instead of correcting them. To avoid such harm, models must be built on diverse, representative data and regularly checked for bias.
+Lack of transparency i.e black box problem
+Many AI especially deep learning systems, produce decisions that are difficult for humans to interpret. This lack of transparency can reduce trust among clinicians and patients, hinder adoption in critical settings, and make it harder to assign responsibility when errors occur.
+Privacy and data security
+AI systems in healthcare depend on large datasets that include sensitive personal health information. If not properly secured, this data can be exposed or misused, undermining patient confidentiality and eroding public trust in healthcare systems.
+Informed Consent
+Patients may not realize AI is involved in their diagnosis or treatment, nor understand how it influences decisions. Lack of transparency limits patients’ ability to give meaningful informed consent, raising concerns about autonomy and trust in care.
+Accountability and liability
+When an AI system causes harm, it's often unclear who should be held accountable—developers, clinicians, or the healthcare institution. This ambiguity complicates legal liability and ethical oversight, making it harder to ensure transparency, trust, and justice in patient care.
+Overreliance on AI
+Clinicians may place too much trust in AI recommendations, sidelining their own expertise or dismissing patients’ perspectives. This overdependence can compromise clinical judgment, reduce personalized care, and contribute to a more impersonal, automated approach to medicine.
+Equity of access. 
+Advanced AI technologies tend to be concentrated in wealthier, urban healthcare centers, leaving rural or underfunded areas behind. This digital divide exacerbates existing health disparities, limiting access to quality care for low-income and marginalized communities.
+# Practical risks of AI use in healthcare
+Incorrect or harmful diagnosis
+AI systems can produce incorrect diagnoses by misinterpreting clinical data or medical images. A misdiagnosis—such as failing to detect a tumor in a radiology scan—can lead to delayed or inappropriate treatment, directly impacting patient outcomes.
+Systems errors and downtime
+AI systems are vulnerable to failures from software bugs, cyberattacks, or hardware issues. Such disruptions can interrupt clinical workflows, delay urgent care, and lead to the loss or inaccessibility of vital patient information—potentially jeopardizing patient safety and trust.
+Interoperability Problems. 
+Many AI tools struggle with interoperability, meaning they don’t integrate smoothly with existing hospital infrastructure or electronic health records (EHRs).  A diagnostic AI might be unable to sync with legacy EHR systems, limiting access to patient history and disrupting clinical workflows. This can reduce the tool’s effectiveness and increase administrative burden.
+Infrastructure and resource limitations
+Limited computational resources restrict a hospital's ability to use complex, high-performance AI systems. Facilities may have to rely on simpler, less resource-intensive models, which can limit predictive accuracy or scalability but offer greater transparency and speed—more suitable for real-time clinical environments with tight budgets.
+Ethics & Bias
+AI tools in healthcare rely on historical data to make predictions—but when that data reflects existing biases, the outcomes can be skewed, potentially amplifying disparities rather than resolving them.
+How Bias Affects Outcomes:
+Underrepresentation of populations (e.g. older adults, rural patients, people with multiple chronic conditions) can cause the model to misclassify risk, leading to inadequate post-discharge care. In the case study, the hospital's CHF patients had the highest readmission rate (33%). If CHF cases are underemphasized or misrepresented in the training data, the model might fail to flag high-risk patients, contributing to poor outcomes. This can result in inequitable resource allocation, where those in need of close follow-up are overlooked.
+Strategy to Reduce Bias/Harm:
+Use representative, inclusive datasets by incorporating patient data from diverse age groups, diagnoses, and socioeconomic backgrounds.
+Regularly audit model outputs for bias—ensuring fairness metrics are embedded in model evaluation.
+Engage clinicians and health equity experts during model development to help identify blind spots that data alone can’t reveal.
+
+Trade-offs
+When deploying AI in clinical settings, hospitals often face a balance between model accuracy and interpretability—each critical, yet sometimes in tension. High-accuracy models (e.g. neural networks) may perform well but offer little insight into why a decision was made—risking clinician skepticism or misapplication. Interpretable models (e.g. logistic regression or decision trees) may be less precise, but they help clinicians understand risk factors driving readmission, which is crucial for trust and action. In the case study, using an interpretable model allows the care team to prioritize CHF patients and design targeted interventions—like the one-month follow-up calls seen in William Petrov’s case.
+
+
+
+
+
+
+
