@@ -1,0 +1,40 @@
+   1. Short Answer Questions
+Q1: Define algorithmic bias and provide two examples of how it manifests in AI systems.
+Definition:
+Algorithmic bias refers to systematic and repeatable errors in an AI system that create unfair outcomes, often by privileging one group over another due to biased data, design choices, or societal inequalities.
+Examples:
+- Facial Recognition Systems: Some have shown higher error rates for people with darker skin tones due to underrepresentation in training datasets.
+- Hiring Algorithms: An AI tool trained on past successful applicants may favor male candidates if historical hiring data was biased against women.
+
+Q2: Explain the difference between transparency and explainability in AI. Why are both important?
+- Transparency is about openness—how clearly an AI system’s workings, data sources, and objectives are shared with users or regulators. It’s like opening the curtain to see how the system operates.
+- Explainability is the ability to describe why the AI made a particular decision, often in human-understandable terms. It answers “why did it do that?”
+Why important?
+Both are crucial for:
+- Accountability: Users and regulators can question or challenge decisions.
+- Trust: People are more likely to adopt AI systems they understand.
+- Fairness & Compliance: Particularly with regulations like GDPR.
+
+Q3: How does GDPR (General Data Protection Regulation) impact AI development in the EU?
+GDPR imposes several responsibilities on AI developers, including:
+- Data Minimization: Only necessary personal data can be collected and used.
+- Right to Explanation: Users can demand an explanation of automated decisions that affect them.
+- Consent & Transparency: AI systems must clearly inform users how their data is processed and gain informed consent.
+- Right to Be Forgotten: Users can request their data be deleted, affecting data retention policies.
+It encourages privacy-by-design, shaping how AI is built from the ground up in Europe.
+
+ 2. Ethical Principles Matching
+-------------------------------------------------------------------------------------
+| Principle          | Definition                                                   | 
+-------------------------------------------------------------------------------------
+| A) Justice         |> Fair distribution of AI benefits and risks                  | 
+-------------------------------------------------------------------------------------
+| B) Non-maleficence |>Ensuring AI does not harm individuals or society             |
+-------------------------------------------------------------------------------------
+| C) Autonomy        |> Respecting users’ right to control their data and decisions |
+-------------------------------------------------------------------------------------
+| D) Sustainability  |> Designing AI to be environmentally friendly                 | 
+-------------------------------------------------------------------------------------
+
+
+
