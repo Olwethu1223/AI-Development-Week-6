@@ -1,0 +1,134 @@
+Task 2: Case Study – Hospital Readmission (Part 2)
+???? 1. Problem Scope
+Problem Statement:
+Hospitals get financially penalized when the patients are readmitted within 30 days of discharge — often due to poor post-care management, undiagnosed conditions, or systemic inefficiencies. We would like to create a machine learning model that will forecast whether a patient will be readmitted within 30 days of discharge or not.
+
+Objectives:
+
+Identify high-risk patients at discharge.
+
+Improve patient care by early intervention.
+
+Reduce hospital readmission rates and fines.
+
+Stakeholders:
+
+Hospital Management: reduce costs & improve KPIs.
+
+Clinicians/Doctors: improve discharge planning.
+
+Patients: improved follow-up care.
+
+Policy Makers & Insurers: improve efficiency of healthcare system.
+
+2. Data Strategy
+Data Sources:
+
+Electronic Health Records (EHR): includes vitals, medications, procedures, diagnosis codes (ICD-10), discharge summaries.
+
+Demographics: age, gender, ethnicity, type of insurance, socio-economic data.
+
+Hospital Info: length of stay, department, discharge type.
+
+Preprocessing Steps
+
+Missing Data: impute through median (numeric) or mode (nominal); remove highly incomplete columns.
+
+Categorical Encoding: one-hot encode features like admission type, insurance, gender.
+
+Outlier Removal: remove outlier length-of-stay values.
+
+Feature Scaling: normalize or standardize numeric features.
+
+Balancing Classes: in case readmissions are under-sampled, apply SMOTE or undersampling.
+
+3. Model Development
+Model Choice:
+Random Forest — offers:
+
+High performance on tabular data
+
+In-built feature importance
+
+Handles missing data & categorical features
+
+Simple to tune and interpret
+
+Alternatively: Logistic Regression for interpretability, or XGBoost for better accuracy (but higher complexity)
+
+Model Pipeline:
+
+80-20 train-test split with stratified sampling to maintain class distribution.
+
+Use cross-validation (e.g., 5-fold) to avoid overfitting.
+
+Hyperparameter tuning via GridSearchCV.
+
+Evaluation Metrics:
+
+Confusion Matrix to view TP, FP, FN, TN
+
+Precision & Recall (extremely important in healthcare)
+
+F1 Score — precision and recall balanced
+
+ROC-AUC Score for overall model comparison
+
+Sample Confusion Matrix (Hypothetical):
+
+Predicted: No	Predicted: Yes
+Actual: No	500 (TN)	70 (FP)
+Actual: Yes	50 (FN)	180 (TP)
+
+Precision = 180 / (180 + 70) = 72%
+
+Recall = 180 / (180 + 50) = 78.3%
+
+F1 Score ≈ 0.75
+
+4. Deployment Plan
+Deployment Strategy:
+
+Model Packaging: Export with joblib or pickle
+
+API Development: Create a REST API with Flask or FastAPI
+
+Integration Point: Hospital discharge dashboard — integrate into EHR interface
+
+Interface: Risk score at discharge, with explanation (SHAP or feature importances)
+
+Infrastructure:
+
+Cloud-based (AWS, Azure) or on-premises if privacy requirements are stringent
+
+Apply Docker containers for portability
+
+Monitoring:
+
+Monitor performance of model weekly (drift detection)
+
+Collect clinician feedback for active learning
+
+Re-train model quarterly with fresh data
+
+ 5. Optimization Strategy
+Continuous Improvements:
+
+Feedback Loop: Tag false positives/negatives from clinician feedback
+
+Model Retraining: Schedule with freshest patient records every 3 months
+
+Feature Expansion: Add lifestyle data, compliance after discharge
+
+Explainability: Apply SHAP values or LIME for transparency
+
+Real-World Constraints:
+
+Interpretability is more critical than fancy black-box accuracy in healthcare.
+
+Prioritize Recall (do not miss at-risk patients) over accuracy alone.
+
+Make low-latency predictions to support real-time discharge procedures.
+
+Model must perform quickly on low-computing power hospital IT hardware.
+
