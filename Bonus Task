@@ -1,0 +1,19 @@
+Ethical AI Use in Healthcare: Guiding Principles
+
+1. Patient Consent Protocols
+- Informed Consent: Patients must receive clear, non-technical explanations of how AI systems will be used in their care, what data will be processed, and possible outcomes.
+- Opt-In Policy: Participation in AI-assisted healthcare should be voluntary, with patients explicitly opting in after understanding implications.
+- Consent Renewal: For ongoing or evolving systems, consent should be periodically reaffirmed, especially when AI capabilities or data usage changes.
+- Data Control: Patients should retain rights to access, correct, or request deletion of their data as per privacy regulations like GDPR or HIPAA.
+
+2.  Bias Mitigation Strategies
+- Diverse Data Collection: Ensure datasets used for training AI include varied populations across ethnicity, gender, socioeconomic status, and geography.
+- Bias Audits: Conduct regular internal and external audits to identify and reduce disparities in model performance and outcomes.
+- Human-in-the-Loop: Maintain oversight by qualified healthcare professionals to catch AI-driven recommendations that might reflect or reinforce bias.
+- Equity by Design: Incorporate fairness objectives during system design—prioritize equitable access and reduce harm to vulnerable groups.
+
+3. Transparency Requirements
+- Explainability: Provide interpretable outputs where AI decisions can be understood by both clinicians and patients to support shared decision-making.
+- System Disclosure: Identify when an AI system is being used in diagnosis, treatment, or patient monitoring, and disclose its role and limitations.
+- Documentation & Traceability: Maintain clear logs of AI system actions, input data sources, model versions, and decision rationales for accountability.
+- Public Reporting: Share performance metrics, limitations, and incidents of harm or failure in public or peer-reviewed formats to build trust.
